@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface IAnnualPermission extends JpaRepository<AnnualPermission, Long> {
+public interface AnnualPermissionRepository extends JpaRepository<AnnualPermission, Long> {
 
 
     //tüm izinleri al

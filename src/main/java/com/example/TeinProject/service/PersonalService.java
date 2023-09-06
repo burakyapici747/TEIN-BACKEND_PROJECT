@@ -2,7 +2,7 @@ package com.example.TeinProject.service;
 
 
 import com.example.TeinProject.model.Employee;
-import com.example.TeinProject.repository.IEmployee;
+import com.example.TeinProject.repository.EmployeeRepository;
 import com.example.TeinProject.result.Result;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class PersonalService {
 
-    private final IEmployee iPersonal;
+    private final EmployeeRepository iPersonal;
 
     public Result<Employee> getPersonalByNameAndPassword(String name, String password){
         Employee employee = iPersonal.getEmployeeByNameAndPassword(name, password);

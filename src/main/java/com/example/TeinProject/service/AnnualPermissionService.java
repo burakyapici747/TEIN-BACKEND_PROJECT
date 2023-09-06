@@ -1,7 +1,7 @@
 package com.example.TeinProject.service;
 
 import com.example.TeinProject.model.AnnualPermission;
-import com.example.TeinProject.repository.IAnnualPermission;
+import com.example.TeinProject.repository.AnnualPermissionRepository;
 import com.example.TeinProject.result.Result;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import java.util.List;
 @Service
 public class AnnualPermissionService {
 
-    private final IAnnualPermission iannualPermission;
+    private final AnnualPermissionRepository iannualPermission;
 
 
 
